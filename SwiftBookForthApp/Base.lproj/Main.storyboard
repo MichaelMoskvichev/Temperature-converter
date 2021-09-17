@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,20 +13,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftBookForthApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="fQq-bM-AoV">
-                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fA2-Xa-Dyz">
-                                <rect key="frame" x="166" y="310" width="58" height="42"/>
+                                <rect key="frame" x="178" y="336" width="58" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9nb-pq-5xf">
-                                <rect key="frame" x="42" y="407" width="306" height="31"/>
+                                <rect key="frame" x="54" y="433" width="306" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="302" id="17u-rS-ffF"/>
                                     <constraint firstAttribute="width" constant="302" id="Wmj-2J-wPF"/>
@@ -52,13 +52,13 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32ºF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGl-cM-7hf">
-                                <rect key="frame" x="159" y="492" width="72" height="42"/>
+                                <rect key="frame" x="171" y="518" width="72" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T-Converter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Vtf-0M-3Rk">
-                                <rect key="frame" x="74" y="108" width="242" height="45"/>
+                                <rect key="frame" x="86" y="108" width="242" height="45"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="35"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -69,10 +69,11 @@
                         <constraints>
                             <constraint firstItem="Vtf-0M-3Rk" firstAttribute="leading" secondItem="fA2-Xa-Dyz" secondAttribute="trailing" constant="91" id="3Fd-Sm-tOw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="fQq-bM-AoV" secondAttribute="leading" constant="44" id="9oy-8o-hjp"/>
-                            <constraint firstItem="fQq-bM-AoV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="AAQ-oO-5wY"/>
                             <constraint firstItem="9nb-pq-5xf" firstAttribute="top" secondItem="fA2-Xa-Dyz" secondAttribute="bottom" constant="40" id="Dzk-cH-FsR"/>
+                            <constraint firstItem="fQq-bM-AoV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="EVa-Zb-k0f"/>
                             <constraint firstItem="9nb-pq-5xf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FQY-rB-VVM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fQq-bM-AoV" secondAttribute="trailing" id="Gcc-9s-dm0"/>
+                            <constraint firstAttribute="bottom" secondItem="fQq-bM-AoV" secondAttribute="bottom" id="Hg9-qK-oMj"/>
                             <constraint firstItem="9nb-pq-5xf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="I3U-zf-auZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fQq-bM-AoV" secondAttribute="trailing" constant="550" id="LmV-kn-WJh">
                                 <variation key="heightClass=compact-widthClass=compact" constant="-44"/>
@@ -91,7 +92,6 @@
                             <constraint firstItem="fQq-bM-AoV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="75.666666666666686" id="bzy-pv-T7k">
                                 <variation key="heightClass=compact-widthClass=compact" constant="21"/>
                             </constraint>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="fQq-bM-AoV" secondAttribute="top" constant="44" id="cp9-2E-24F"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vtf-0M-3Rk" secondAttribute="trailing" constant="16" id="dk8-n5-0Of"/>
                             <constraint firstItem="Vtf-0M-3Rk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eOF-en-aPU"/>
                             <constraint firstItem="9nb-pq-5xf" firstAttribute="top" secondItem="fA2-Xa-Dyz" secondAttribute="bottom" constant="56" id="esj-5b-oL8">
@@ -108,15 +108,19 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="9oy-8o-hjp"/>
-                                <exclude reference="Gcc-9s-dm0"/>
-                                <exclude reference="LmV-kn-WJh"/>
-                                <exclude reference="cp9-2E-24F"/>
-                                <exclude reference="dk8-n5-0Of"/>
-                                <exclude reference="AAQ-oO-5wY"/>
                                 <exclude reference="bzy-pv-T7k"/>
                                 <exclude reference="esy-mo-sJI"/>
                                 <exclude reference="oRc-mA-zIK"/>
+                                <exclude reference="9oy-8o-hjp"/>
+                                <exclude reference="Gcc-9s-dm0"/>
+                                <exclude reference="LmV-kn-WJh"/>
+                                <exclude reference="dk8-n5-0Of"/>
+                                <exclude reference="3Fd-Sm-tOw"/>
+                                <exclude reference="MoQ-zD-KDL"/>
+                                <exclude reference="eOF-en-aPU"/>
+                                <exclude reference="iFV-qS-CYt"/>
+                                <exclude reference="OwI-ah-hBr"/>
+                                <exclude reference="exs-Yv-v3d"/>
                                 <exclude reference="Dzk-cH-FsR"/>
                                 <exclude reference="FQY-rB-VVM"/>
                                 <exclude reference="I3U-zf-auZ"/>
@@ -124,34 +128,28 @@
                                 <exclude reference="Qu0-jx-Zq0"/>
                                 <exclude reference="esj-5b-oL8"/>
                                 <exclude reference="vIc-2I-CC3"/>
-                                <exclude reference="OwI-ah-hBr"/>
-                                <exclude reference="exs-Yv-v3d"/>
                                 <exclude reference="Pgo-RK-w2M"/>
                                 <exclude reference="SRD-Vh-xf2"/>
                                 <exclude reference="a9b-C1-UDN"/>
                                 <exclude reference="jCi-qZ-0I7"/>
-                                <exclude reference="3Fd-Sm-tOw"/>
-                                <exclude reference="MoQ-zD-KDL"/>
-                                <exclude reference="eOF-en-aPU"/>
-                                <exclude reference="iFV-qS-CYt"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
                             <mask key="constraints">
+                                <include reference="bzy-pv-T7k"/>
+                                <include reference="oRc-mA-zIK"/>
                                 <include reference="9oy-8o-hjp"/>
                                 <include reference="LmV-kn-WJh"/>
                                 <include reference="dk8-n5-0Of"/>
-                                <include reference="bzy-pv-T7k"/>
-                                <include reference="oRc-mA-zIK"/>
+                                <include reference="3Fd-Sm-tOw"/>
+                                <include reference="iFV-qS-CYt"/>
+                                <include reference="OwI-ah-hBr"/>
                                 <include reference="Dzk-cH-FsR"/>
                                 <include reference="I3U-zf-auZ"/>
                                 <include reference="Qu0-jx-Zq0"/>
                                 <exclude reference="vIc-2I-CC3"/>
-                                <include reference="OwI-ah-hBr"/>
                                 <include reference="Pgo-RK-w2M"/>
                                 <include reference="jCi-qZ-0I7"/>
-                                <include reference="3Fd-Sm-tOw"/>
-                                <include reference="iFV-qS-CYt"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -161,18 +159,16 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <include reference="Gcc-9s-dm0"/>
-                                <include reference="cp9-2E-24F"/>
-                                <include reference="AAQ-oO-5wY"/>
                                 <include reference="esy-mo-sJI"/>
+                                <include reference="Gcc-9s-dm0"/>
+                                <include reference="MoQ-zD-KDL"/>
+                                <include reference="eOF-en-aPU"/>
+                                <include reference="exs-Yv-v3d"/>
                                 <include reference="FQY-rB-VVM"/>
                                 <include reference="Nk9-cD-5Nr"/>
                                 <include reference="esj-5b-oL8"/>
-                                <include reference="exs-Yv-v3d"/>
                                 <include reference="SRD-Vh-xf2"/>
                                 <include reference="a9b-C1-UDN"/>
-                                <include reference="MoQ-zD-KDL"/>
-                                <include reference="eOF-en-aPU"/>
                             </mask>
                         </variation>
                     </view>
@@ -184,11 +180,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="614" y="-609"/>
+            <point key="canvasLocation" x="613.04347826086962" y="-609.375"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Sun" width="250" height="444.66665649414062"/>
+        <image name="Sun" width="375" height="667"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
